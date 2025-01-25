@@ -1,66 +1,71 @@
+<!--
+
+• AUTHOR: Dua Khan
+
+• EDITOR & RESOLUTIONIST: Irtaza Ansari
+
+• ISSUE: Webpage / website unable to submit data to back-end server due to lack of functionality.
+
+• RESOLUTION: Back-end data redirectional functionality was implemented using 'formspree.io' platform.
+
+-->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
 <!DOCTYPE html>
 <html>
 <head>
-
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> 
-
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> 
 </head>
 
 <body>
 <div class="navi" style="display: flex; padding-left:40px;">
-<!--logo-->
-
-<div class="logo" >
-<img src="images/logo.png" width="100" height="100" alt"DF Developers" >
+    <!--logo-->
+    <div class="logo">
+        <img src="images/logo.png" width="100" height="100" alt="DF Developers">
+    </div>
+    <!--logo-->
+    <nav>
+        <div class="nav">
+            <ul><b>
+                <li><a href="INDEX.html">HOME </a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="mission.html">MISSION STATEMENT</a></li>
+                <li><a href="blog.html">PORTFOLIO</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
 
-<!--logo-->
-<nav>
-  <div class="nav">
-                
-     <ul><b>
-         <li><a href="index.html">HOME </a></li>
-         <li><a href="about_us.html">ABOUT US</a></li>
-         <li><a href="mission.html">MISSION STATEMENT</a></li>
-		 <li><a href="blog.html">PORTFOLIO</a></li>
-		 <li><a href="contact_us.html">CONTACT US</a></li>
-     </ul>
-  
-  </div>
-             
-</nav>
-
-
+<div style="font-size:28px; text-align:center; margin-top:30px; font-family:arial;">
+    <h2>CONTACT US</h2>
 </div>
+<p style="font-size:28px; text-align:center; margin-top:20px; font-family:garamond;">
+    Swing by for a cup of tea, or leave us a message.
+</p>
 
-
-   <div style="font-size:28px; text-align:center; margin-top:30px; font-family:arial;"><h2>CONTACT US</h2></div>
-   <p style="font-size:28px;text-align:center; margin-top:20px; font-family:garamond;">Swing by for a cup of tea, or leave us a message.</p>
-   
- <div class="grid4"> 
- 
-	  <img style="margin-left:180px;margin-top:85px; margin-bottom:100px; border-radius: 28px; box-shadow: 20px 20px 20px grey;  " src="images/contact us.jpeg" width="550" height="450">
-      
-   
-   <div style="margin-left:120px; margin-top:100px;">
-    <form action="/action_page.php">
-       <label for="fname" style="font-size:27px; margin-top:90px; font-family:arial;">First Name:</label><br><br>
-       <input type="text"id="fname"name="fname" placeholder="Enter First Name"   style="padding:6px 100px 15px 10px; border-radius: 8px;"><br><br>
-       <label for="lname" style="font-size:27px; font-family:arial;">Last Name:</label><br><br>
-       <input type="text"id="lname"name="lname"placeholder="Enter Last Name"  style="padding:6px 100px 15px 10px;border-radius: 8px;"><br><br>
-       <label for="Email" style="font-size:27px; font-family:arial;">E-mail Address:</label><br><br>
-       <input type="text"id="Email"name="Email"placeholder="Enter E-mail Address"  style="padding:6px 100px 15px 10px; border-radius: 8px;"><br><br>
-       <input type="submit"class="submit">
-	   </form>
+<div class="grid4"> 
+    <img style="margin-left:180px; margin-top:85px; margin-bottom:100px; border-radius: 28px; box-shadow: 20px 20px 20px grey;" src="images/contact us.jpeg" width="550" height="450">
+    
+    <div style="margin-left:120px; margin-top:100px;">
+        <!-- Formspree Form Action -->
+         <form action="https://formspree.io/f/mjkgkjpy" method="POST">
+            <label for="fname" style="font-size:27px; margin-top:90px; font-family:arial;">First Name:</label><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name" style="padding:6px 100px 15px 10px; border-radius: 8px;"><br><br>
+            
+            <label for="lname" style="font-size:27px; font-family:arial;">Last Name:</label><br><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" style="padding:6px 100px 15px 10px;border-radius: 8px;"><br><br>
+            
+            <label for="Email" style="font-size:27px; font-family:arial;">E-mail Address:</label><br><br>
+            <input type="text" id="Email" name="Email" placeholder="Enter E-mail Address" style="padding:6px 100px 15px 10px; border-radius: 8px;"><br><br>
+            
+            <input type="submit" class="submit">
+        </form>
+    </div>
 </div>
-</div>
-
-
-
-
-
 
 </body>
 </html>
